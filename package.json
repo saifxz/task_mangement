@@ -1,0 +1,6 @@
+{
+    "name": "taskmanager-monorepo",
+    "private": true,
+    "workspaces": ["api", "frontend"]
+  }
+  
