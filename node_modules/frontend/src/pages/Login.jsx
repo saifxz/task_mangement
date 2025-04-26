@@ -11,7 +11,7 @@ function Login() {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      const res = await axios.post('/auth/login', { email, password });
+      const res = await axios.post('http', { email, password });
       localStorage.setItem('token', res.data.token);
       navigate('/');
     } catch {
